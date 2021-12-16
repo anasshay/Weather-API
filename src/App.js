@@ -31,6 +31,7 @@ class App extends Component {
             <img className='current-state-icon' src={storm} alt='strom' />
             <h3 className='current-state-text'>overcast clouds</h3>
             </div>
+            <div className="current-state-description"></div>
           
           </main>
 
