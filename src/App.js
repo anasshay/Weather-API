@@ -27,11 +27,20 @@ class App extends Component {
         <button >FIND WEATHER</button>      
         </header>  
         <main>
-          <div class="current-state">
-            <img className='current-state-icon' src={storm} alt='strom' />
-            <h3 className='current-state-text'>overcast clouds</h3>
+          <div class="weather-now">
+            <img className='weather-now-icon' src={storm} alt='strom' />
+            <h3 className='weather-now-text'>overcast clouds</h3>
+            <div classNsame="weather-now-description">
+              <p className='temperature'><span className='bold-span'>Temperature</span> 10°C to 11°C</p>
+              <div className='hum-pre'>
+                <span className='bold-span'>Humidity</span>
+                <span className='value'>78%</span>
+                <span className='bold-span'>Pressure</span>
+                <span className='value'>1008.48</span>
+
+              </div>
+              </div>
             </div>
-            <div className="current-state-description"></div>
           
           </main>
 

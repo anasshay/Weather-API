@@ -2,6 +2,7 @@
   height: 100vh;
   width: 100vw;
   transition: background-color 1s ease-in;
+  font-size: 1.2rem;
 }
 
 .app__header,
@@ -26,15 +27,31 @@
 body {
   background-color: #9CCEF4;
   margin: 0;
+  font-family: 'Raleway','Courier New', Courier, monospace;
 }
 
-.current-state-icon {
+.weather-now {
+  margin: 50px auto 0;
+  width: fit-content;
+  text-align: center;
+}
+.bold-span {
+  font-weight: bold;
+}
+.weather-now-text, .temperature{
+  margin-bottom: 25px;
+}
+.weather-now-icon {
   width: 15vw;   
 }
-
-.current-state-text {
+.weather-now-text {
   color: white;
 }
 
+.hum-pre {
+  font-size: 0.8rem;
+  display: flex;
+  justify-content: space-between;
+}
 
 
