@@ -19,7 +19,22 @@
 /*  Search bar */
 
 /* Current weather */
-
-div {
-  border: 5px solid red;
+* {
+  margin: 0;
 }
+
+body {
+  background-color: #9CCEF4;
+  margin: 0;
+}
+
+.current-state-icon {
+  width: 15vw;   
+}
+
+.current-state-text {
+  color: white;
+}
+
+
+

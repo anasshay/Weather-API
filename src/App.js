@@ -5,6 +5,8 @@ import SayHi, { SayHello } from "./components/WeatherItem";
 import fakeWeatherData from "./fakeWeatherData.json";
 
 import "./App.css";
+import storm from '../src/img/weather-icons/storm.svg'
+
 
 class App extends Component {
   constructor(props) {
@@ -21,9 +23,17 @@ class App extends Component {
   render() {
     return (
       <div className="app">
-        <SayHi />
-        <SayHello color="black" name={this.state.name} />
-        <Search handleInput={this.handleInputChange} />
+        <header><h1 className=''>Hello</h1>
+        <button >FIND WEATHER</button>      
+        </header>  
+        <main>
+          <div class="current-state">
+            <img className='current-state-icon' src={storm} alt='strom' />
+            <h3 className='current-state-text'>overcast clouds</h3>
+            </div>
+          
+          </main>
+
       </div>
     );
   }
