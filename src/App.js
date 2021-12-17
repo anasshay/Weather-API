@@ -6,6 +6,7 @@ import fakeWeatherData from "./fakeWeatherData.json";
 
 import "./App.css";
 import storm from '../src/img/weather-icons/storm.svg'
+import SearchComp from "./SearchComp";
 
 
 class App extends Component {
@@ -16,6 +17,7 @@ class App extends Component {
     };
   }
 
+
   handleInputChange = value => {
     this.setState({ name: value });
   };
@@ -24,10 +26,7 @@ class App extends Component {
     return (
       <div className="app">
         <header>
-          <form>
-        <input className='text' type="text" placeholder='Search...'/>
-        <input className='button' type='submit' value='FIND WEATHER' />
-        </form>
+          <SearchComp></SearchComp>
         </header>  
         <main>
           <div class="weather-now">
