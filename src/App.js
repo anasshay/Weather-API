@@ -23,8 +23,11 @@ class App extends Component {
   render() {
     return (
       <div className="app">
-        <header><h1 className=''>Hello</h1>
-        <button >FIND WEATHER</button>      
+        <header>
+          <form>
+        <input className='text' type="text" placeholder='Search...'/>
+        <input className='button' type='submit' value='FIND WEATHER' />
+        </form>
         </header>  
         <main>
           <div class="weather-now">
@@ -42,6 +45,43 @@ class App extends Component {
               </div>
             </div>
           
+          <div className='weather-next'>
+            <div className='weather-next-item'>
+              <span classNane='icon-time'>3:00</span>
+              <img src='https://placekitten.com/200/300' alt='placeholder'/>
+              <span className='icon-temperature'>10°C</span>
+              </div>
+            <div className='weather-next-item'>
+              <span classNane='icon-time'>6:00</span>
+              <img src='https://placekitten.com/200/300' alt='placeholder' />
+              <span className='icon-temperature'>10°C</span>
+              </div>
+            <div className='weather-next-item'>
+              <span classNane='icon-time'>9:00</span>
+              <img src='https://placekitten.com/200/300' alt='placeholder' />
+              <span className='icon-temperature'>10°C</span>
+              </div>
+            <div className='weather-next-item'>
+              <span classNane='icon-time'>12:00</span>
+              <img src='https://placekitten.com/200/300' alt='placeholder' />
+              <span className='icon-temperature'>10°C</span>
+              </div>
+            <div className='weather-next-item'>
+              <span classNane='icon-time'>15:00</span>
+              <img src='https://placekitten.com/200/300' alt='placeholder' />
+              <span className='icon-temperature'>10°C</span>
+              </div>
+            <div className='weather-next-item'>
+              <span classNane='icon-time'>18:00</span>
+              <img src='https://placekitten.com/200/300' alt='placeholder' />
+              <span className='icon-temperature'>10°C</span>
+              </div>
+            <div className='weather-next-item'>
+              <span classNane='icon-time'>21:00</span>
+              <img src='https://placekitten.com/200/300' alt='placeholder' />
+              <span className='icon-temperature'>10°C</span>
+              </div>
+          </div>
           </main>
 
       </div>

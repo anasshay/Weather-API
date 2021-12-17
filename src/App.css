@@ -1,6 +1,13 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
 .app {
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   transition: background-color 1s ease-in;
   font-size: 1.2rem;
 }
@@ -20,18 +27,17 @@
 /*  Search bar */
 
 /* Current weather */
-* {
-  margin: 0;
-}
 
 body {
+  color: #0B1B48;
   background-color: #9CCEF4;
   margin: 0;
   font-family: 'Raleway','Courier New', Courier, monospace;
+  /* height: fit-content; */
 }
 
 .weather-now {
-  margin: 50px auto 0;
+  margin: 20px auto 0;
   width: fit-content;
   text-align: center;
 }
@@ -42,7 +48,7 @@ body {
   margin-bottom: 25px;
 }
 .weather-now-icon {
-  width: 15vw;   
+  width: 12vw;   
 }
 .weather-now-text {
   color: white;
@@ -54,4 +60,39 @@ body {
   justify-content: space-between;
 }
 
+.weather-next {
+  width: 100%;
+  padding: 0 10vw;
+  margin: 50px 0;
+  display: flex;
+  justify-content: space-between;
+}.weather-next-item{
+  width: 14%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.9rem;
+}
+.weather-next-item img {
+  width: 60%;
+  margin: 20px 0;
+}
 
+@media (max-width:768px) {
+  .weather-now-icon {
+    width: 20vw;
+  }
+  .weather-next{
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+  }
+  .weather-next-item {
+    width: 50%;
+    margin: 20px 0;
+  }
+  .weather-next-item img {
+    margin: 5px 0;
+  }
+}
