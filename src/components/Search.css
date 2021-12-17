@@ -18,6 +18,20 @@ header {
     border-radius: 2px;
     outline: 0;
     font-family: 'Raleway','Courier New', Courier, monospace;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+  cursor: pointer;
+}
+
+.button:active{
+    background-color: #8196c7;
+}
+
+.button:hover{
+    color: #fff;
 }
 
 .text {
@@ -30,8 +44,12 @@ header {
     margin-right: 7rem;
     width: 150px;
     font-family: 'Raleway','Courier New', Courier, monospace;
+    padding: 5px 10px;
 }.text::placeholder{
     color: #fff;
+}.text:hover, .text:focus-visible{
+    border: #5879c7 2px solid;
+    border-radius: 7px;
 }
 
 @media (max-width:768px) {
