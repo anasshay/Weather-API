@@ -62,9 +62,7 @@ header {
       text-align: center;
     }
     header .text{
-      margin-right: 0;
+      margin-right: 10px;
       margin-bottom: 10px;
-    }
-    header .button {
     }
 }
