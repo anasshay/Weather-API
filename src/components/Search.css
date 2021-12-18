@@ -45,11 +45,13 @@ header {
     width: 150px;
     font-family: 'Raleway','Courier New', Courier, monospace;
     padding: 5px 10px;
+    
 }.text::placeholder{
     color: #fff;
 }.text:hover, .text:focus-visible{
     border: #5879c7 2px solid;
     border-radius: 7px;
+    
 }
 
 @media (max-width:768px) {
