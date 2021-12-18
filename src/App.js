@@ -28,19 +28,19 @@ class App extends Component {
     return (
       <div className="app">
         <header>
-          <SearchComp></SearchComp>
+          <SearchComp />
         </header>  
         <main>
-          <WeatherItemComp></WeatherItemComp>
+          <WeatherItemComp />
           
           <div className='weather-next'>
-            <WeatherItems></WeatherItems>
-            <WeatherItems></WeatherItems>
-            <WeatherItems></WeatherItems>
-            <WeatherItems></WeatherItems>
-            <WeatherItems></WeatherItems>
-            <WeatherItems></WeatherItems>
-            <WeatherItems></WeatherItems>
+            <WeatherItems />
+            <WeatherItems />
+            <WeatherItems />
+            <WeatherItems />
+            <WeatherItems />
+            <WeatherItems />
+            <WeatherItems />
           </div>
           </main>
 
