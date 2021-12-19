@@ -10,17 +10,15 @@ import SearchComp from "./Componentss/SearchComp";
 import WeatherItemComp from "./Componentss/WeatherItemComp";
 import WeatherItems from "./Componentss/WeatherItems";
 
-
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      name: "Anass"
+      name: "Anass",
     };
   }
 
-
-  handleInputChange = value => {
+  handleInputChange = (value) => {
     this.setState({ name: value });
   };
 
@@ -29,12 +27,12 @@ class App extends Component {
       <div className="app">
         <header>
           <SearchComp />
-        </header>  
+        </header>
         <main>
           <WeatherItemComp />
-          
-          <div className='weather-next'>
-            <WeatherItems />
+
+          <div className="weather-next">
+            <WeatherItems time='3:00' imgSrc='https://placekitten.com/200/300' temp='10°C'/>
             <WeatherItems />
             <WeatherItems />
             <WeatherItems />
@@ -42,8 +40,7 @@ class App extends Component {
             <WeatherItems />
             <WeatherItems />
           </div>
-          </main>
-
+        </main>
       </div>
     );
   }
