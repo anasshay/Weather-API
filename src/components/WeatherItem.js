@@ -3,15 +3,10 @@ import { render } from "react-dom";
 
 export default class WeatherItem extends Component {
   render() {
-    return <div>Heello</div>;
-  }
-}
-export class SayHello extends Component {
-  render() {
-    return (
-      <div style={{ color: this.props.color, backgroundColor: "yellow" }}>
-        Hello {this.props.name}
-      </div>
-    );
+    return <div className='weather-next-item'>
+    <span classNane='icon-time'>{this.props.time}</span>
+    <img src='https://placekitten.com/200/300' alt='placeholder'/>
+    <span className='icon-temperature'>{this.props.temp}°C</span>
+    </div>
   }
 }

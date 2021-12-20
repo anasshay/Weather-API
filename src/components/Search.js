@@ -1,4 +1,6 @@
 import React from "react";
+import fakeWeather from "../data/FakeWeather.json"
+
 
 import clear from "../img/weather-icons/clear.svg";
 import "./Search.css";

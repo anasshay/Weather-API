@@ -1,14 +1,19 @@
-import React, { Component } from 'react'
+import React from 'react'
 import storm from '../img/weather-icons/storm.svg'
+import fakeWeather from "../data/FakeWeather.json"
+import "../App.css"
 
 
-export default class WeatherItemComp extends Component {
-    render() {
-        return (
-            <div>
-            <div class="weather-now">
-            <img className='weather-now-icon' src={storm} alt='strom' />
-            <h3 className='weather-now-text'>overcast clouds</h3>
+
+export default class WeatherNowComp extends React.Component {
+
+
+  render() {
+    return (
+      <div>
+        <div class="weather-now">
+            <img className='weather-now-icon' src={this.props.weatherIcon} alt='storm' />
+            <h3 className='weather-now-text'>{this.props.currentState}</h3>
             <div classNsame="weather-now-description">
               <p className='temperature'><span className='bold-span'>Temperature</span> {this.props.lowTemp}°C to {this.props.highTemp}°C</p>
               <div className='hum-pre'>
@@ -18,8 +23,8 @@ export default class WeatherItemComp extends Component {
                 <span className='value'>{this.props.pressure}</span>
               </div>
               </div>
-            </div>
-            </div>
-        )
-    }
+        </div>
+      </div>
+    )
+  }
 }
