@@ -13,17 +13,22 @@ import WeatherNowComp from "./components/WeatherNowComp";
 import WeatherItem from "./components/WeatherItem"
 
 
+const API_key = 'b3a3b3e8c8d522d4417af4909738cc02';
+
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
       weatherList: fakeWeather.list,
+      city: '',
     };
   }
 
   handleInputChange = value => {
     this.setState({ name: value });
   };
+
+  // http://api.openweathermap.org/data/2.5/forecast?q=${city}&cnt=8&units=metric&appid=${APO_key}
 
   render() {
     return (
